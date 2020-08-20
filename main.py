@@ -1,3 +1,5 @@
+from person import Person
+
 message = "Python"
 print(message + '\n')
 
@@ -39,3 +41,8 @@ def print_greeting(name = "Brandon Weaver"):
 
 print_greeting("Jane Doe")
 print_greeting()
+print()
+
+# Classes
+person = Person("John", "Doe")
+person.print_full_name()
