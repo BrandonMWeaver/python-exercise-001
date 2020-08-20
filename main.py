@@ -1,9 +1,9 @@
 message = "Python"
-print(message)
+print(message + '\n')
 
 # String formatting
 name = "Brandon Weaver"
-print("My name is {}.".format(name))
+print("My name is {}.\n".format(name))
 
 # Conditionals
 number = 5
@@ -27,5 +27,15 @@ for person in people:
 print("\nWhile:")
 i = 0
 while i < len(people):
-    print(people[i])
+    if i == len(people) - 1:
+        print(people[i] + '\n')
+    else:
+        print(people[i])
     i += 1
+
+# Functions
+def print_greeting(name = "Brandon Weaver"):
+    print("Hello, my name is {}.".format(name))
+
+print_greeting("Jane Doe")
+print_greeting()
